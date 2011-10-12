@@ -1,5 +1,5 @@
 PATH
-  remote: /home/bdb/rails_apps/toto
+  remote: /home/bdb/rails_apps/od_toto
   specs:
     toto (0.4.9)
       builder
