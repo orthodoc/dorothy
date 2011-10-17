@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
+## borrowed from git://github.com/aendruk/kahve.git
 gem "builder"
 gem "rdiscount"
 gem "heroku"
@@ -15,6 +16,4 @@ group :development do
   gem "rake"
   gem "thin"
 end
-
-## inspired by git://github.com/aendruk/kahve.git
 

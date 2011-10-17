@@ -10,15 +10,42 @@
  * ==|== normalize ==========================================================
  */
 
+/*
+*
+*  Golden Grid System (1.0)	<http://goldengridsystem.com/>
+*  by Joni Korpi 				<http://jonikorpi.com/>
+*  licensed under MIT			<http://opensource.org/licenses/mit-license.php>
+*
+*/
+
+//
+// Important numbers
+//
+
+$line: 24;
+$column: 100% / 18;
+$font-size: 16;
+$em: $font-size * 1;
+
 
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
-[hidden] { display: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { 
+	display: block; 
+}
+audio, canvas, video { 
+	display: inline-block; 
+	*display: inline; 
+	*zoom: 1; 
+}
+audio:not([controls]) { 
+	display: none; 
+}
+[hidden] { 
+	display: none; 
+}
 
 
 /* =============================================================================
@@ -31,11 +58,22 @@ audio:not([controls]) { display: none; }
  * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { 
+	font-size: 100%; 
+	overflow-y: scroll; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%; 
+}
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+body { 
+	margin: 0; 
+	font-size: 100%; 
+}
 
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { 
+	font-family: sans-serif; 
+	color: #222; 
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -43,65 +81,179 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { 
+	background: #fe57a1; 
+	color: #fff; 
+	text-shadow: none; 
+}
+::selection { 
+	background: #fe57a1; 
+	color: #fff; 
+	text-shadow: none; 
+}
 
 
 /* =============================================================================
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
-a:focus { outline: thin dotted; }
+a { 
+	color: #00e; 
+}
+a:visited { 
+	color: #551a8b; 
+}
+a:hover { 
+	color: #06e; 
+}
+a:focus { 
+	outline: thin dotted; 
+}
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover, a:active { outline: 0; }
+a:hover, a:active { 
+	outline: 0; 
+}
 
 
 /* =============================================================================
    Typography
    ========================================================================== */
 
-abbr[title] { border-bottom: 1px dotted; }
+body {
+	/* 16px / 24px */
+	font-size: $font-size / 16 * 1em;
+	line-height: #{$line / $em}em;
+}
 
-b, strong { font-weight: bold; }
+.small {
+	/* 13px / 18px */
+	font-size: #{($font-size*0.8125) / $em}em;
+	line-height: ($line*0.75) / ($font-size*0.8125) * 1em;
+}
 
-blockquote { margin: 1em 40px; }
+.normal, h3 {
+	/* 16px / 24px */
+	font-size: #{$font-size / $em}em;
+	line-height: #{$line / $em}em; /* 24 */
+}
 
-dfn { font-style: italic; }
+.large, h2, h1 {
+	/* 26 / 36px */
+	font-size: #{26 / $em}em;
+	line-height: ($line*1.5) / 26 * 1em;
+}
 
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+.huge {
+	/* 42px / 48px */
+	font-size: #{42 / $em}em;
+	line-height: ($line*2) / 42 * 1em;
+}
 
-ins { background: #ff9; color: #000; text-decoration: none; }
+.massive {
+	/* 68px / 72px */
+	font-size: #{68 / $em}em;
+	line-height: ($line*3) / 68 * 1em;
+}
 
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+.gigantic {
+	/* 110px / 120px */
+	font-size: #{110 / $em}em;
+	line-height: ($line*5) / 110 * 1em;
+}
+
+abbr[title] { 
+	border-bottom: 1px dotted; 
+}
+
+b, strong { 
+	font-weight: bold; 
+}
+
+blockquote { 
+	margin: 1em 40px; 
+}
+
+dfn { 
+	font-style: italic; 
+}
+
+hr { 
+	display: block; 
+	height: 1px; 
+	border: 0; 
+	border-top: 1px solid #ccc; 
+	margin: 1em 0; 
+	padding: 0; 
+}
+
+ins { 
+	background: #ff9; 
+	color: #000; 
+	text-decoration: none; 
+}
+
+mark { 
+	background: #ff0; 
+	color: #000; 
+	font-style: italic; 
+	font-weight: bold; 
+}
 
 /* Redeclare monospace font family: h5bp.com/j */
-pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre, code, kbd, samp { 
+	font-family: monospace, serif; 
+	_font-family: 'courier new', monospace; 
+	font-size: $font-size /16 * 1em; 
+}
 
 /* Improve readability of pre-formatted text in all browsers */
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+pre { 
+	white-space: pre; 
+	white-space: pre-wrap; 
+	word-wrap: break-word; 
+}
 
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
+q { 
+	quotes: none; 
+}
+q:before, q:after { 
+	content: ""; 
+	content: none; 
+}
 
-small { font-size: 85%; }
 
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
+sub, sup { 
+	font-size: 75%; 
+	line-height: 0; 
+	position: relative; 
+	vertical-align: baseline; 
+}
+sup { 
+	top: -0.5em; 
+}
+sub { 
+	bottom: -0.25em; 
+}
 
 
 /* =============================================================================
    Lists
    ========================================================================== */
 
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+ul, ol { 
+	margin: 1em 0; 
+	padding: 0 0 0 40px; 
+}
+dd { 
+	margin: 0 0 0 40px; 
+}
+nav ul, nav ol { 
+	list-style: none; 
+	list-style-image: none; 
+	margin: 0; padding: 0; 
+}
 
 
 /* =============================================================================
@@ -113,20 +265,33 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
  * 2. Remove the gap between images and borders on image containers: h5bp.com/e
  */
 
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+img { 
+	border: 0; 
+	-ms-interpolation-mode: bicubic; 
+	vertical-align: middle; 
+}
 
 /*
  * Correct overflow not hidden in IE9
  */
 
-svg:not(:root) { overflow: hidden; }
+svg:not(:root) { 
+	overflow: hidden; 
+}
 
 
 /* =============================================================================
    Figures
    ========================================================================== */
 
-figure { margin: 0; }
+figure { 
+	margin: 0;
+	position: relative; 
+}
+
+figure img, figure object, figure embed, figure video {
+	max-width: 100%;
+}
 
 
 /* =============================================================================
