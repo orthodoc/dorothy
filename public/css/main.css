@@ -515,7 +515,8 @@ body > footer {
   clear: both; }
 
 .clearfix {
-  *zoom: 1; }
+  *
+	zoom: 1; }
 
 /* ==|== print styles =======================================================
    Print styles.
