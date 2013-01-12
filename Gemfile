@@ -7,7 +7,7 @@ gem "heroku"
 gem "sass", :require => "sass/plugin/rack"
 
 if ENV['RACK_ENV'] == "development"
-  gem "toto", :path => "../od_toto"
+  gem "toto", :path => "../toto"
 else
   gem "toto", :git => "git://github.com/orthodoc/toto.git"
 end
@@ -15,5 +15,6 @@ end
 group :development do
   gem "rake"
   gem "thin"
+  gem "rb-inotify"
 end
 
