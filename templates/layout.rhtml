@@ -20,8 +20,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu|Convergence' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -37,7 +37,13 @@
         </section>
         <footer>
           <p>
-          <span class="copyleft">&copy;</span> Copyleft 2013. Biswajit Dutta Baruah. Powered by <a href="http://clouhead.io/toto>toto">toto</a>. Design inspired by <a href="http://freegeek.in">freegeek</a> and <a href="http://alistapart.com">A list Apart</a>
+            <span class="copyleft">&copy;</span> Copyleft 
+              <% if (Time.now.year - 2013) > 0 %>
+                2013 - <%= Time.now.year %>
+              <% else %>
+                <%= Time.now.year %>
+              <% end %>. 
+            Biswajit Dutta Baruah. Powered by <a href="http://clouhead.io/toto">toto</a>. Design inspired by <a href="http://freegeek.in">freegeek</a> and <a href="http://alistapart.com">a list apart</a>.
           </p>
         </footer>
 

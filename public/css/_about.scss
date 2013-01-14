@@ -1,0 +1,25 @@
+﻿.content {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.10), 0 0 30px rgba(0, 0, 0, 0.05) inset;
+  margin: 0 auto;
+  padding: 10px;
+  width: 830px;
+}
+
+#pic {
+  display: inline;
+  float: left;
+  height: 438px;
+  width: 270px;
+  margin-right: 10px;
+}
+
+#info {
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  height: 438px;
+  line-height: 1.5em;
+  text-align: left;
+}
