@@ -37,12 +37,17 @@
         </section>
         <footer>
           <p>
-            <span class="copyleft">&copy;</span> Copyleft 
+            <!--[if lte IE 8]>   
+              <span class="copyleft-ie">&copy;</span>
+            <![else]>
+              <span class="copyleft">&copy;</span>
+            <![endif]-->
+            Copyleft 
               <% if (Time.now.year - 2013) > 0 %>
-                2013 - <%= Time.now.year %>
+                2013 - <%= Time.now.year %>.
               <% else %>
-                <%= Time.now.year %>
-              <% end %>. 
+                <%= Time.now.year %>.
+              <% end %>
             Biswajit Dutta Baruah. Powered by <a href="http://clouhead.io/toto">toto</a>. Design inspired by <a href="http://freegeek.in">freegeek</a> and <a href="http://alistapart.com">a list apart</a>.
           </p>
         </footer>

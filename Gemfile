@@ -4,7 +4,6 @@ source "http://rubygems.org"
 gem "builder"
 gem "rdiscount"
 gem "heroku"
-gem "sass", :require => "sass/plugin/rack"
 
 if ENV['RACK_ENV'] == "development"
   gem "toto", :path => "../toto"
@@ -16,5 +15,6 @@ group :development do
   gem "rake"
   gem "thin"
   gem "rb-inotify"
+  gem "sass", :require => "sass/plugin/rack"
 end
 
