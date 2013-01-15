@@ -36,7 +36,7 @@ end
 require "rack-rewrite"
 if ENV['RACK_ENV'] == 'production'
   use Rack::Rewrite do
-    r301 %r{.*}, 'http://orthodoc.in$&', :if => Proc.new {|rack_env| rack_env['SERVER_NAME'] != 'orthodoc.in'}
+    r301 %r{.*}, 'http://www.orthodoc.in$&', :if => Proc.new {|rack_env| rack_env['SERVER_NAME'] != 'www.orthodoc.in'}
   end
 end
 
