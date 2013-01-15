@@ -126,13 +126,16 @@ h2 {
   -o-transform: scaleX(-1); 
   -webkit-transform: scaleX(-1); 
   transform: scaleX(-1); 
-/*  <!--[if lte IE 8]>
-    filter: FlipH; 
-    -ms-filter: "FlipH"; 
-    display: inline-block;
-  <![endif]-->*/
 }
 
+.copyleft-ie {
+  display: inline-block;
+  vertical-align: top;
+  transform: scaleX(-1); 
+  filter: FlipH; 
+  -ms-filter: "FlipH"; 
+  display: inline-block;
+}
 
 
 
