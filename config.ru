@@ -33,7 +33,6 @@ toto = Toto::Server.new do
 end
 
 # Redirect www to non-www
-gem "rack-rewrite"
 require "rack-rewrite"
 if ENV['RACK_ENV'] == 'production'
   use Rack::Rewrite do
