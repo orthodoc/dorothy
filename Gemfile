@@ -5,6 +5,7 @@ gem "builder"
 gem "rdiscount"
 gem "heroku"
 gem "thin"
+gem "rack-rewrite"
 
 if ENV['RACK_ENV'] == "development"
   gem "toto", :path => "../toto"
