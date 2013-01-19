@@ -1,0 +1,17 @@
+﻿html {
+  background-color: #efefef;
+  font-family: $brand-face;
+}
+
+body {
+  color: #464646;
+  & a, & a:link, & a:visited {
+    color: #e6624e;
+    text-decoration: none;
+  }
+  & a:hover {
+    color: #000;
+    background-color: #f4f2e4;
+    border-bottom: 1px solid #9a8e51;
+  }
+}

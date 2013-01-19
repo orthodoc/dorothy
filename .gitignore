@@ -18,7 +18,13 @@ tmp/*
 
 # vim artifacts
 **.swp
+*.swo
 
 #ubuntu artifacts
 *.*~
 *~
+
+#inuit related
+*.css
+!inuit.css/
+.DS_Store

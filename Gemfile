@@ -15,7 +15,11 @@ end
 
 group :development do
   gem "rake"
-  gem "rb-inotify"
-  gem "sass", :require => "sass/plugin/rack"
+  gem "sass","~>3.2", :require => "sass/plugin/rack"
+  gem "guard"
+  gem "guard-livereload"
+  gem "rb-inotify", "~>0.8.8"
+  gem "shotgun"
+  gem "guard-sass"
 end
 

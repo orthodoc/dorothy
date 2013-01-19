@@ -1,0 +1,22 @@
+﻿footer {
+  clear: both;
+  font-size: 0.85em;
+  text-align: center;
+  line-height: 0.65em;
+  vertical-align: baseline;
+  margin-top: 1.5em;
+}
+
+footer span.copyleft {
+  display: inline-block;
+  vertical-align: top;
+  -moz-transform: scaleX(-1); 
+  -o-transform: scaleX(-1); 
+  -webkit-transform: scaleX(-1); 
+  transform: scaleX(-1); 
+//  <!--[if lte IE 8]>
+//    filter: FlipH; 
+//    -ms-filter: "FlipH"; 
+//    display: inline-block;
+//  <![endif]-->
+}

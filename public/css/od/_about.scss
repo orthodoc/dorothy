@@ -1,0 +1,31 @@
+﻿#about {
+  h2 {
+    text-align: center;
+    margin-top: #{$base-spacing-unit};
+    font-family: "Convergence", Arial, sans-serif;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.65)
+  }
+  .content {
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 0 8px rgba(0,0,0,0.10), 0 0 30px rgba(0,0,0,0.05) inset;
+    width: 830px;
+    padding: 10px;
+  }
+  .pic {
+    overflow: hidden;
+    float: left;
+  }
+  .img {
+    float: left;
+    height: 438px;
+    width: 270px;
+  }
+  .info {
+    margin: 10px 10px 10px 280px;
+    overflow: hidden;
+    text-align: left;
+    height: 418px;
+  }
+}
