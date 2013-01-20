@@ -19,13 +19,26 @@
   }
   .img {
     float: left;
-    height: 438px;
     width: 270px;
   }
   .info {
-    margin: 10px 10px 10px 280px;
+    margin: 10px 0 10px 280px;
     overflow: hidden;
     text-align: left;
     height: 418px;
+  }
+}
+
+@include media-query(palm) {
+  #about {
+    .content {
+      max-width: 415px;
+    }
+    .img {
+      max-width: 135px;
+    }
+    .info {
+    
+    }
   }
 }

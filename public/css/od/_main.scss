@@ -1,6 +1,7 @@
 ﻿html {
   background-color: #efefef;
   font-family: $brand-face;
+  @include font-size(16px);
 }
 
 body {
