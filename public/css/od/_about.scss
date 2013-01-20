@@ -1,4 +1,5 @@
-﻿#about {
+﻿$padding: #{$base-line-height / 2};
+#about {
   h2 {
     text-align: center;
     margin-top: #{$base-spacing-unit};
@@ -10,35 +11,21 @@
     background-color: #fff;
     border: 1px solid rgba(0,0,0,0.15);
     box-shadow: 0 0 8px rgba(0,0,0,0.10), 0 0 30px rgba(0,0,0,0.05) inset;
-    width: 830px;
-    padding: 10px;
   }
   .pic {
+    padding: $padding;
+    width: auto;
     overflow: hidden;
     float: left;
   }
   .img {
     float: left;
-    width: 270px;
+    width: auto;
   }
   .info {
-    margin: 10px 0 10px 280px;
+    padding: $padding; 
     overflow: hidden;
     text-align: left;
-    height: 418px;
   }
 }
 
-@include media-query(palm) {
-  #about {
-    .content {
-      max-width: 415px;
-    }
-    .img {
-      max-width: 135px;
-    }
-    .info {
-    
-    }
-  }
-}

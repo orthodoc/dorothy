@@ -16,3 +16,21 @@ body {
     border-bottom: 1px solid #9a8e51;
   }
 }
+
+/**
+*Set a padding for the container
+*/
+
+$column: 100%/18;
+.container {
+  padding: 0 $column 0 $column;
+  .gw,
+  .grid-wrapper{
+   margin-left: 0;
+   padding-left: 0;
+  }
+  .g,
+  .grid{
+    @include rem(padding-left, 0, #{($base-line-height/2)/$base-font-size})
+  }
+}

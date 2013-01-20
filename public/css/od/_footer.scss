@@ -1,10 +1,13 @@
 ﻿footer {
   clear: both;
-  font-size: 0.85em;
+  font-size: #{($base-font-size/2)+($base-line-height/4)};
   text-align: center;
-  line-height: 0.65em;
   vertical-align: baseline;
   margin-top: 1.5em;
+  p {
+    margin: 0;
+    padding:0;
+  }
 }
 
 footer span.copyleft {
