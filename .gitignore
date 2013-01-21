@@ -26,5 +26,6 @@ tmp/*
 
 #inuit related
 *.css
+!*.min.css
 !inuit.css/
 .DS_Store
