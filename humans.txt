@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Biswajit Dutta Baruah -- Creative Head -- @0rthodoc
 
 # THANKS
 
-    <name>
+    Baishampayan Ghose, Alexis Sellier, Harry Roberts
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Sass, inuit.css, toto, Heroku, Github
