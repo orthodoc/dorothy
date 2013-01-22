@@ -6,6 +6,8 @@ gem "rdiscount"
 gem "heroku"
 gem "thin"
 gem "rack-rewrite"
+gem "rack-cache"
+gem "dalli"
 
 if ENV['RACK_ENV'] == "development"
   gem "toto", :path => "../toto"
